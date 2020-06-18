@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs') %>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="card mt-5" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><%- movie.title %></h5>
+                    <p class="card-text"><b>Awards:</b> <%- movie.awards %></p>
+                    <p class="card-text"><b>Length:</b> <%- movie.length %> mm</p>
+                    <p class="card-text"><b>Release Date:</b> <%- movie.release_date %></p>
+                    <button type="button" class="btn btn-danger ml-5">DELETE</button>
+                    <button type="button" class="btn btn-primary">UPDATE</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/scripts.ejs')%>
+</body>
+</html>

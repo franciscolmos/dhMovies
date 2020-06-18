@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <% movies.forEach(movie =>{ %>
+                    <ul>
+                        <li>
+                           <a href=/movies/detail/<%- movie.id%>><%- movie.title %></a>
+                        </li>
+                    </ul>
+                <% }) %>
+            </div>
+        </div> 
+    </div>
+<%- include('partials/scripts.ejs')%>
+</body>
+</html>
