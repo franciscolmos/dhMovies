@@ -2,7 +2,8 @@
 <html lang="en">
 <%- include('partials/head') %>
 <body>
-    <div class="container-fluid">
+    <%- include('partials/header.ejs') %>
+    <div class="container-fluid"> 
         <div class="row justify-content-center">
             <div class="col-8">
                 <% movies.forEach(movie =>{ %>
@@ -13,7 +14,8 @@
                     </ul>
                 <% }) %>
             </div>
-        </div> 
+        </div>
+        <a href="/movies/create"><button type="button" class="btn btn-primary">CREATE</button></a>
     </div>
 <%- include('partials/scripts.ejs')%>
 </body>
