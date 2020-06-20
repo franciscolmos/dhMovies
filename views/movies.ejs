@@ -5,7 +5,12 @@
     <%- include('partials/header.ejs') %>
     <div class="container-fluid"> 
         <div class="row justify-content-center">
-            <div class="col-8">
+            <div class="col-6 mt-5">
+                <div class="text-right">
+                    <a href="/movies/create"><button type="button" class="btn btn-primary">ADD MOVIE</button></a>
+                </div>
+                <h1 class="text-center">LISTADO DE PELICULAS</h1>
+                <hr>
                 <% movies.forEach(movie =>{ %>
                     <ul>
                         <li>
@@ -15,7 +20,6 @@
                 <% }) %>
             </div>
         </div>
-        <a href="/movies/create"><button type="button" class="btn btn-primary">CREATE</button></a>
     </div>
 <%- include('partials/scripts.ejs')%>
 </body>

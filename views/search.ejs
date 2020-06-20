@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('partials/head.ejs')%>
+<%- include('partials/head.ejs') %> 
 <body>
     <%- include('partials/header.ejs') %>
-    <div class="container-fluid">
+    <div class="container-fluid"> 
         <div class="row justify-content-center">
             <div class="col-6 mt-5">
-                <h1 class="text-center">MAS RECIENTES</h1>
+                <h1 class="text-center">RESULTADO DE LA BUSQUEDA</h1>
                 <hr>
-                <% newMovies.forEach(newMovie =>{ %>
+                <% peliculas.forEach(pelicula =>{ %>
                     <ul>
                         <li>
-                           <a href=/movies/detail/<%- newMovie.id%>><%- newMovie.title %></a>
+                           <a href=/movies/detail/<%- pelicula.id%>><%- pelicula.title %></a>
                         </li>
                     </ul>
                 <% }) %>
             </div>
-        </div> 
-    </div>
-<%- include('partials/scripts.ejs')%>
+        </div>
+    </div> 
+    
 </body>
 </html>
