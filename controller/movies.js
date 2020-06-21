@@ -2,7 +2,6 @@ let db = require('../database/models');
 let moment = require('moment');
 const { Sequelize } = require('../database/models');
 const { Op } = require('sequelize');
-let sequelize = db.sequelize;
 
 module.exports = movieController = {
     list: (req, res, next) => {
