@@ -1,12 +1,8 @@
-body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  }
   
-  .navegador{
-    background-color: black !important;
-  }
-  
-  a {
-    color: #00B7FF;
+  footer{
+    align-self: flex-end;
+    background-color:rgba(120, 120, 120, .5);
+    line-height: 3;
+    text-align: center;
+    width: 100%;
   }
